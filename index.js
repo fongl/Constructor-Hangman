@@ -1,3 +1,4 @@
+console.clear();
 game();
 function game() {
   var Word = require("./word.js");
@@ -103,6 +104,7 @@ function game() {
         } else {
           guessed.push(lowGuess);
           words[rand].guess(lowGuess);
+          console.clear();
           console.log(words[rand].display());
           let temp = words[rand].display();
           if (temp.indexOf("_") == -1) {
